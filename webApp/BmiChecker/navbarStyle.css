@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Satisfy&display=swap");
+
+:root {
+  --header-bg: #323647;
+  --default-bg-color: #282a39;
+  --logo-font: "Satisfy", sans-serif;
+  --default-font: "Mulish", sans-serif;
+  --header-bg-layer: rgba(29, 31, 35, 0.7);
+  --button-color: #f87c59;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.top {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.navigation-container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem 1rem 2rem;
+  background-color: var(--header-bg);
+}
+
+#hire-me {
+  background-color: var(--button-color);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+#hire-me:active {
+  transform: scale(0.98);
+  background-color: #a57b82;
+}
+
+.header-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo > a {
+  font-size: 2rem;
+  font-family: var(--logo-font);
+  text-decoration: none;
+  color: white;
+}
+
+.header {
+  transform-style: preserve-3d;
+}
+
+.header-button > a {
+  transition: 0.2s;
+  font-family: var(--default-font);
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.header-button > a:hover:not(:last-child) {
+  color: var(--button-color);
+}

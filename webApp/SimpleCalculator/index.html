@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="navbarStyle.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Simple Calculator</title>
+  </head>
+  <body>
+    <header>
+      <div class="navigation-container">
+        <nav class="navigation">
+          <div class="logo"><a href="../../">Afiq</a></div>
+          <div class="header-button">
+            <a href="../../#background" id="about-me">About Me</a>
+            <a href="../../#portfolio" id="tools">Tools</a>
+            <a
+              href="https://www.dropbox.com/s/kp3ep3awntbhvdg/lab%20skill%201%20_AIMAN%20AFIQ%20BIN%20SURADI.pdf?dl=1"
+              id="hire-me"
+              >Hire Me</a
+            >
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="card">
+          <h1>Simple Calculator</h1>
+          <div>
+            <label for="num1" style="display: block">Number 1:</label>
+            <input type="number" name="num1" id="num1" required />
+          </div>
+          <div>
+            <label for="num2" style="display: block">Number 2:</label>
+            <input type="number" name="num2" id="num2" required />
+          </div>
+          <div class="result-container">
+            <p>Result: <a id="result"></a></p>
+          </div>
+          <div class="buttons">
+            <button class="button add">+</button>
+            <button class="button subtract">-</button>
+            <button class="button divide">/</button>
+            <button class="button multiply">*</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
