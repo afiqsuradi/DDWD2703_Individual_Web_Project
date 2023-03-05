@@ -157,7 +157,7 @@ html {
   /* height: 100vh; */
 }
 
-.biodata-container > h1 {
+.biodata-container > .personal-detail > .text > h1 {
   color: white;
   padding: 2rem 0 0 0;
   font-family: var(--default-font);
@@ -304,4 +304,36 @@ html {
 .portfolio {
   background-color: var(--header-bg);
   height: 100vh;
+}
+
+.personal-detail {
+  background-color: var(--header-bg);
+  display: flex;
+  width: 70%;
+  justify-content: flex-start;
+  padding: 5rem 4rem;
+  gap: 10rem;
+}
+
+.personal-detail > .text {
+  width: 50%;
+  color: white;
+  font-family: var(--default-font);
+  font-size: 1.2rem;
+}
+
+.personal-detail > .text > p {
+  padding-top: 3rem;
+}
+
+.personal-detail > .text > p > a {
+  color: var(--button-color);
+}
+
+.personal-image {
+  background-image: url("./images/aboutme.jpeg");
+  background-position: center;
+  background-size: cover;
+  height: 25rem;
+  width: 20rem;
 }
