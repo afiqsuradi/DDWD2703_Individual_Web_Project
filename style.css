@@ -301,11 +301,6 @@ html {
   font-size: 1.5rem;
 }
 
-.portfolio {
-  background-color: var(--header-bg);
-  height: 100vh;
-}
-
 .personal-detail {
   background-color: var(--header-bg);
   display: flex;
@@ -336,4 +331,66 @@ html {
   background-size: cover;
   height: 25rem;
   width: 20rem;
+}
+
+.portfolio {
+  background-color: var(--header-bg);
+}
+
+.portfolio > div > h1 {
+  font-family: var(--default-font);
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+  padding: 4rem 0 2rem 0;
+}
+
+.tools-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  padding-bottom: 4rem;
+}
+
+.tool {
+  background-color: var(--header-bg);
+  padding: 1rem 2rem;
+  gap: 4rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 20rem;
+  height: 20rem;
+  transition: all 0.4s;
+}
+
+.tool:hover {
+  transform: scale(1.05);
+  background-color: var(--button-color);
+  cursor: pointer;
+}
+.tool.title {
+  flex: 1;
+}
+
+.tool.desc {
+  flex: 2;
+}
+
+.tool .title > h1 {
+  font-size: 1.6rem;
+  padding-top: 1rem;
+  text-align: center;
+}
+.tool .desc > p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+a.tool {
+  font-family: var(--default-font);
+  color: white;
+  text-decoration: none;
 }
