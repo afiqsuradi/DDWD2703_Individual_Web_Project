@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Satisfy&display=swap");
+
+:root {
+  --header-bg: #323647;
+  --default-bg-color: #282a39;
+  --logo-font: "Satisfy", sans-serif;
+  --default-font: "Mulish", sans-serif;
+  --header-bg-layer: rgba(29, 31, 35, 0.7);
+  --button-color: #f87c59;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.top {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.navigation-container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem 1rem 2rem;
+  background-color: var(--header-bg);
+}
+
+#hire-me {
+  background-color: var(--button-color);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+#hire-me:active {
+  transform: scale(0.98);
+  background-color: #a57b82;
+}
+
+.header-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo > a {
+  font-size: 2rem;
+  font-family: var(--logo-font);
+  text-decoration: none;
+  color: white;
+}
+
+.header {
+  transform-style: preserve-3d;
+}
+
+.header-button > a {
+  transition: 0.2s;
+  font-family: var(--default-font);
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.header-button > a:hover:not(:last-child) {
+  color: var(--button-color);
+}
+
+.header-container {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+}
+
+.header-container::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: var(--header-bg-layer);
+
+  z-index: -1;
+}
+
+.header-image {
+  display: table;
+  position: absolute;
+  background-image: url("./images/header.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: -2;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10rem;
+  color: white;
+  font-family: var(--default-font);
+  z-index: 1;
+}
+
+.header-text-top {
+  font-size: 1.8rem;
+}
+
+.header-text > h1 {
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.header-text > h2 {
+  font-size: 2.2rem;
+  padding-bottom: 1rem;
+}
+
+.header-text > div {
+  margin-top: 4rem;
+}
+
+.header-text > div > #hire-me {
+  color: white;
+  text-decoration: none;
+  font-family: var(--default-font);
+}
+
+.header-text-bottom {
+  width: 30%;
+}
+
+.biodata-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--default-bg-color);
+  /* height: 100vh; */
+}
+
+.biodata-container > h1 {
+  color: white;
+  padding: 2rem 0 0 0;
+  font-family: var(--default-font);
+  font-size: 4rem;
+}
+
+.biodata-container > h2 {
+  color: white;
+  padding: 2rem 0 4rem 0;
+  font-family: var(--default-font);
+  font-size: 2rem;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  height: 90%;
+}
+
+.card {
+  display: flex;
+  width: 25vw;
+  height: 30vh;
+  overflow: hidden;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--header-bg);
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: translateX(-100%);
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 1s;
+}
+
+.card:nth-child(2) {
+  transition-delay: 200ms;
+}
+
+.card:nth-child(3) {
+  transition-delay: 400ms;
+}
+
+.card.show {
+  transform: translateX(0);
+  filter: blur(0);
+  opacity: 1;
+}
+
+.card-text {
+  flex: 1;
+  font-family: var(--default-font);
+  color: white;
+  text-align: center;
+}
+
+.card-text > h3 {
+  font-size: 1.5rem;
+}
+
+.card-text > h4 {
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+.card-image {
+  flex: 2;
+  background-image: url("./images/sklbj.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 50%;
+  width: 50%;
+}
+
+.card-image.stj {
+  background-image: url("./images/smstj.png");
+}
+
+.card-image.utm {
+  background-image: url("./images/utm.png");
+}
+
+.skill-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.skill-card {
+  height: 15rem;
+  opacity: 0;
+  filter: blur(5px);
+  transform: scale(0.5);
+  transition: all 0.6s ease-in-out;
+}
+
+.skill-card.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: scale(1);
+}
+
+.skill-card-icon {
+  height: 50%;
+  width: 100%;
+}
+
+.skill-card-icon.programming {
+  background-image: url("./images/programming.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.skill-card-icon.video-game {
+  background-image: url("./images/game-controller.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.skill-card-icon.internet {
+  background-image: url("./images/global.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.skill-card-text > h3 {
+  font-family: var(--default-font);
+  color: white;
+  font-size: 1.5rem;
+}
+
+.portfolio {
+  background-color: var(--header-bg);
+  height: 100vh;
+}
