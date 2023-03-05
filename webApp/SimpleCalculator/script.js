@@ -2,7 +2,8 @@
 
 const buttonsEl = document.querySelectorAll(".button");
 const resultEl = document.getElementById("result");
-let num1, num2;
+let num1 = 0,
+  num2 = 0;
 
 let calculate = {
   "+": function (num1, num2) {

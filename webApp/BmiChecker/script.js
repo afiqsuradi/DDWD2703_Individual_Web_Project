@@ -1,7 +1,7 @@
 "use strict";
 
-let weight = parseFloat(document.getElementById("weight").value);
-let height = parseFloat(document.getElementById("height").value);
+let weight = 0;
+let height = 0;
 let bmi = "";
 const result = document.getElementById("result");
 
