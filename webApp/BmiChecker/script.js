@@ -1,6 +1,6 @@
 const [weight, height, result] = [
-  Number(document.getElementById("weight").value),
-  Number(document.getElementById("height").value),
+  parseFloat(document.getElementById("weight").value),
+  parseFloat(document.getElementById("height").value),
   document.getElementById("result"),
 ];
 
