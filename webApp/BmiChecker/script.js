@@ -8,6 +8,7 @@ let bmi;
 
 document.querySelector(".calculate").addEventListener("click", () => {
   bmi = weight / Math.pow(height / 100, 2);
+  console.log(bmi);
   if (bmi >= 40) {
     showResult("Extremely Obese", "#E90064");
   } else if (bmi >= 30 && bmi < 40) {
