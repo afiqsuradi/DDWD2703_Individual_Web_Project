@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./navbarStyle.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+    <title>Unit Converter</title>
+  </head>
+  <body>
+    <header>
+      <div class="navigation-container">
+        <nav class="navigation">
+          <div class="logo"><a href="../../">Afiq</a></div>
+          <div class="header-button">
+            <a href="../../#background" id="about-me">About Me</a>
+            <a href="../../#portfolio" id="tools">Tools</a>
+            <a
+              href="https://www.dropbox.com/s/kp3ep3awntbhvdg/lab%20skill%201%20_AIMAN%20AFIQ%20BIN%20SURADI.pdf?dl=1"
+              id="hire-me"
+              >Hire Me</a
+            >
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="card">
+          <h1>Unit Converter</h1>
+          <div>
+            <label for="unit1" style="display: block">Convert:</label>
+            <input type="number" name="unit1n" id="unit1n" required />
+            <select name="unit1" id="unit1">
+              <option value="cm">cm</option>
+              <option value="m">m</option>
+              <option value="km">Km</option>
+            </select>
+          </div>
+          <div>
+            <label for="unit2" style="display: block">To:</label>
+            <div style="display: inline-block" id="result">
+              <a class="result-placeholder">?</a>
+            </div>
+            <select name="unit2" id="unit2">
+              <option value="cm">cm</option>
+              <option value="m">m</option>
+              <option value="km">Km</option>
+            </select>
+          </div>
+          <div class="buttons">
+            <button class="convert">Convert</button>
+            <button class="clear">Clear</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
