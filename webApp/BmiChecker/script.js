@@ -1,14 +1,14 @@
-const [weight, height, result] = [
-  parseFloat(document.getElementById("weight").value),
-  parseFloat(document.getElementById("height").value),
-  document.getElementById("result"),
-];
+"use strict";
 
-let bmi;
+let weight = parseFloat(document.getElementById("weight").value);
+let height = parseFloat(document.getElementById("height").value);
+let bmi = "";
+const result = document.getElementById("result");
 
 document.querySelector(".calculate").addEventListener("click", () => {
+  weight = parseFloat(document.getElementById("weight").value);
+  height = parseFloat(document.getElementById("height").value);
   bmi = weight / Math.pow(height / 100, 2);
-  console.log(bmi);
   if (bmi >= 40) {
     showResult("Extremely Obese", "#E90064");
   } else if (bmi >= 30 && bmi < 40) {
