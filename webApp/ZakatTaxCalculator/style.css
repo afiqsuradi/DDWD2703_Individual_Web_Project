@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Satisfy&display=swap");
+
+:root {
+  --header-bg: #323647;
+  --default-bg-color: #282a39;
+  --default-font: "Mulish", sans-serif;
+  --header-bg-layer: rgba(29, 31, 35, 0.7);
+  --button-color: #f87c59;
+  --button-hover-color: rgb(233, 110, 94);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 91vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--default-font);
+  color: white;
+  font-size: 1.2rem;
+  background-color: var(--default-bg-color);
+}
+
+.card {
+  display: flex;
+  max-width: 30rem;
+  flex-direction: column;
+  border-radius: 1rem;
+  background-color: var(--header-bg);
+  padding: 2rem 4rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card h1 {
+  text-align: center;
+  padding-bottom: 2rem;
+  font-weight: 700;
+}
+
+label {
+  padding: 1.5rem 0 0.6rem 0;
+}
+
+#income {
+  width: 80%;
+  background-color: var(--default-bg-color);
+  color: white;
+  border: none;
+  border-bottom: 0.2rem solid var(--button-color);
+  height: 2rem;
+  outline: none;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  gap: 1rem;
+  align-items: center;
+  width: 100%;
+}
+
+.buttons button {
+  width: 100%;
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+  padding: 0.4rem 0.2rem;
+  border-radius: 0.6rem;
+  border: none;
+  outline: none;
+  background-color: var(--button-color);
+  cursor: pointer;
+}
+.buttons button:active {
+  transform: scale(0.98);
+}
+.buttons button:hover {
+  background-color: var(--button-hover-color);
+}
+
+.result-container {
+  padding-top: 2rem;
+}
+
+#result {
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.4rem;
+}
