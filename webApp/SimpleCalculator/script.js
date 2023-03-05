@@ -2,8 +2,8 @@
 
 const buttonsEl = document.querySelectorAll(".button");
 const [num1, num2, resultEl] = [
-  Number(document.getElementById("num1").value),
-  Number(document.getElementById("num2").value),
+  parseFloat(document.getElementById("num1").value),
+  parseFloat(document.getElementById("num2").value),
   document.getElementById("result"),
 ];
 
